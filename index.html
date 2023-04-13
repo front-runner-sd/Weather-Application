@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js"></script>
+    <title>Weather App By Soudip</title>
+  </head>
+  <body>
+    <div class="search-element">
+      <i><ion-icon name="search-outline" id="i-ele"></ion-icon></i>
+      <input type="text" id="input" class="input" value="Kolkata" />
+    </div>
+    <div class="header-city">Kolkata</div>
+    <div id="header-date">09/04/2023</div>
+    <div class="elements">
+      <div class="header-temp">
+        <div class="temp-ele">34</div>
+        <div class="unit">°C</div>
+        <div class="temp-weather">Haze</div>
+      </div>
+      <div class="card1">
+        <div class="card1-comp feels-like">Feels like</div>
+
+        <div class="card1-comp humidity">Humidity</div>
+        <div class="card1-res res-feels-like">38° C</div>
+        <div class="card1-res res-humidity">59%</div>
+
+        <div class="card1-comp wind-speed">Wind speed</div>
+
+        <div class="card1-comp air-pressure">Air pressure</div>
+        <div class="card1-res res-wind-speed">20 km/h</div>
+        <div class="card1-res res-air-pressure">1023 hPa</div>
+
+        <div class="card1-comp max-temp">Max temp</div>
+
+        <div class="card1-comp visibility">Visibility</div>
+        <div class="card1-res res-max-temp">36° C</div>
+        <div class="card1-res res-visibility">4 km</div>
+      </div>
+      <div class="colum">
+        <div class="card2">
+          <div class="card2-comp" id="wd1">Sun</div>
+          <div class="card2-comp" id="wd2">Mon</div>
+          <div class="card2-comp" id="wd3">Tue</div>
+          <div class="card2-comp" id="wd4">Wed</div>
+          <div class="card2-comp" id="wd5">Thu</div>
+
+          <div class="wdi">
+            <ion-icon name="sunny-outline" id="wdi0"></ion-icon>
+            <span id="s0">Clear</span>
+          </div>
+          <div class="wdi">
+            <ion-icon name="partly-sunny-outline" id="wdi1"></ion-icon>
+            <span id="s1">Clear</span>
+          </div>
+          <div class="wdi">
+            <ion-icon name="rainy-outline" id="wdi2"></ion-icon>
+            <span id="s2">Clear</span>
+          </div>
+          <div class="wdi">
+            <ion-icon name="cloudy-outline" id="wdi3"></ion-icon>
+            <span id="s3">Clear</span>
+          </div>
+          <div class="wdi">
+            <ion-icon name="thunderstorm-outline" id="wdi4"></ion-icon>
+            <span id="s4">Clear</span>
+          </div>
+        </div>
+        <div class="card3">
+          <div class="aq">Air Quality</div>
+          <div class="card3-comp">PM(2.5)</div>
+          <div class="card3-comp">PM(10)</div>
+          <div class="card3-comp">SO2</div>
+          <div class="card3-comp">NO2</div>
+          <div class="res-aq">Good</div>
+          <div class="res-card3-comp" id="pm2.5">10</div>
+          <div class="res-card3-comp" id="pm10">10</div>
+          <div class="res-card3-comp" id="so2">10</div>
+          <div class="res-card3-comp" id="no2">10</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=WeakRef,BigInt"></script>
+  <script src="https://cdn.jsdelivr.net/npm/superagent"></script>
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <footer>Made by SOUDIP DAS 💖</footer>
+  <script>
+    Search();
+  </script>
+</html>
